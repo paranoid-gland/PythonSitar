@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div class="container">
+  <div class="jumbotron">
+	  <h1><center> Ausländer im Burgeramt </center></h1>
+	  <hr class="solid">
+      <p> - Guten Tag! {{data.part1}}, Ich {{data.part2}} nur ein bisschen Deutsch! </p>
+      <p> - Naja... was brauchen Sie?</p> 
+      <p> - Ich {{data.part3}} ein {{data.part4}} </p> 
+      <p> - Haben Sie die {{data.part5}} mitgebraucht? </p> 
+      <p> - {{data.part6}}! {{data.part7}}?  </p>
+      <p> - Ohne {{data.part5}} kann Ich nichts machen. Nehmen Sie 'nen anderen Termin und kommen Sie zurück. <br> Nächster!</p> 
+  </div>
+  <center><button onclick=location.reload() type="button" class="btn btn-secondary">
+		  Noch Eine!</button></center>
+ 
+{% endblock %}

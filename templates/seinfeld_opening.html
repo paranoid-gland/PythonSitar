@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div class="container">
+  <div class="jumbotron">
+	  <h1><center> 2021 Seinfeld opening </center></h1>
+	  <hr class="solid">
+	  <p> What's the deal about {{data.seinf_part1}}?
+	  <br> People feel so {{data.seinf_part2}} when they talk about {{data.seinf_part1}}!
+	  <p> "Oh, did you read that article about {{data.seinf_part1}}?"</p>
+	  <br> We get it!
+	  <p> It's a freaking {{data.seinf_part3}}!</p>
+	  <br> You think you're having a nice evening out
+	  <br>{{data.seinf_part4}} and somebody says:
+	  <br> <br>
+	  <p>"We gotta get outta here! It's bad for {{data.seinf_part1}}!"</p>
+  </div>
+  <center><button onclick=location.reload() type="button" class="btn btn-secondary">
+		  a button about nothing</button></center>
+ 
+{% endblock %}

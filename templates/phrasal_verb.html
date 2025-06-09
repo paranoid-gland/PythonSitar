@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div class="container">
+  <div class="jumbotron">
+	  <h1><center> {{data.verb }} </center></h1>
+	  <hr class="solid">
+	  <p><center><i> Definition</i>: {{ data.definition }} </center></p>
+  </div>
+  <center><button onclick=location.reload() type="button" class="btn btn-secondary">
+		  Another one!</button></center>
+ 
+{% endblock %}
