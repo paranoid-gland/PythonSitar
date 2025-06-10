@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from datetime import datetime
 from phrasal_verb import definition, generated_verb
 from burgeramt import (
     dialogue_part1,
@@ -18,17 +19,22 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("index.html", current_year=datetime.now().year)
 
 
-@app.route("/about")
-def bio():
-    return render_template("about.html")
+@app.route("/other")
+def other():
+    return render_template("other.html", current_year=datetime.now().year)
 
 
-@app.route("/test")
-def test():
-    return render_template("test.html")
+@app.route("/webapps")
+def webapps():
+    return render_template("webapps.html", current_year=datetime.now().year)
+
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html", current_year=datetime.now().year)
 
 
 @app.route("/phrasal_verb")
