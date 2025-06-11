@@ -15,11 +15,14 @@
 
 <body>
 
-  <nav class="custom-nav">
-    <a href="{{ url_for('index') }}">Home</a>
-    <a href="{{ url_for('webapps') }}">Web Apps</a>
-    <a href="{{ url_for('contact') }}">Contatti</a>
-    <a href="{{ url_for('other') }}">Other Projects</a>
+
+{% set path = request.path %}
+
+  <nav class="nav-scroll">
+  <a href="{{ url_for('index') }}" class="{% if path == '/' %}active{% endif %}">Home</a>
+  <a href="{{ url_for('webapps') }}" class="{% if path == '/webapps' %}active{% endif %}">Web Apps</a>
+  <a href="{{ url_for('contact') }}" class="{% if path == '/contact' %}active{% endif %}">Contatti</a>
+  <a href="{{ url_for('other') }}" class="{% if path == '/other' %}active{% endif %}">Other Projects</a>
   </nav>
 
   <div class="container mt-4">
