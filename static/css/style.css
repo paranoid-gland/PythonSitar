@@ -1,41 +1,93 @@
+
 .nav-scroll {
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: #161b22;
-    border-bottom: 1px solid #30363d;
-    scrollbar-width: none; /* Firefox */
+  background-color: #161b22;
+  border-bottom: 1px solid #30363d;
+  padding: 1rem;
 }
 
-.nav-scroll::-webkit-scrollbar {
-    display: none; /* Chrome, Safari */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav-scroll a {
-    color: #ccd6f6;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    font-weight: 500;
-    flex: 0 0 auto;
-    transition: background 0.2s ease, color 0.2s ease;
+.logo {
+  color: #ccd6f6;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
-.nav-scroll a:hover {
-    background-color: #3e414d;
-    /* color: #64ffda; */
-
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #ccd6f6;
+  cursor: pointer;
+  margin-left: auto;
 }
 
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
 
-.nav-scroll a.active {
+.nav-links a {
+  color: #ccd6f6;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-links a:hover {
+  background-color: #3e414d;
+}
+
+.nav-links a.active {
   background-color: #ccd6f6;
   color: #0a192f;
   font-weight: bold;
 }
 
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #161b22;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .nav-links.show {
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-container {
+    position: relative;
+  }
+}
 
 .footer {
     position: fixed;

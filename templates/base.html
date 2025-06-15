@@ -13,19 +13,27 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
-<body>
-
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById("nav-links");
+    navLinks.classList.toggle("show");
+  }
+</script>
 
 {% set path = request.path %}
+<nav class="nav-scroll">
+  <div class="nav-container">
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+  </div>
 
-  <nav class="nav-scroll">
-  <a href="{{ url_for('index') }}" class="{% if path == '/' %}active{% endif %}">Home</a>
-  <a href="{{ url_for('webapps') }}" class="{% if path == '/webapps' %}active{% endif %}">Web Apps</a>
-  <a href="{{ url_for('contact') }}" class="{% if path == '/contact' %}active{% endif %}">Contatti</a>
-  <a href="{{ url_for('other') }}" class="{% if path == '/other' %}active{% endif %}">Other Projects</a>
-  <a href="{{ url_for('wacky') }}" class="{% if path == '/wacky' %}active{% endif %}">Wacky Code</a>
-  </nav>
-
+  <div id="nav-links" class="nav-links">
+    <a href="{{ url_for('index') }}" class="{% if path == '/' %}active{% endif %}">Home</a>
+    <a href="{{ url_for('webapps') }}" class="{% if path == '/webapps' %}active{% endif %}">Web Apps</a>
+    <a href="{{ url_for('contact') }}" class="{% if path == '/contact' %}active{% endif %}">Contatti</a>
+    <a href="{{ url_for('other') }}" class="{% if path == '/other' %}active{% endif %}">Other Projects</a>
+    <a href="{{ url_for('wacky') }}" class="{% if path == '/wacky' %}active{% endif %}">Wacky Code</a>
+  </div>
+</nav>
   <div class="container mt-4">
     {% block content %}
     {% endblock %}
