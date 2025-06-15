@@ -53,43 +53,91 @@ body {font-family: Arial;}
 <p> The fun corner of my portfolio, where code meets absurdity and automation. </p>
 <p> These small projects might be silly, but they are a tangible showcase of how I use Python to build creative, and fast ideas. </p>
 <p> Because all in all I don't only code for work. I code for fun. </p>
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'HR')">HR</button>
-  <button class="tablinks" onclick="openCity(event, 'verbs')">Phrasal Verbs</button>
-  <button class="tablinks" onclick="openCity(event, 'bürgeramt')">Bürgeramt</button>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+
+<button class="accordion">HR Rejection</button>
+<div class="panel">
+  <p class="my-3">Automatic generator of HR Rejection letters</p>
+<a href="{{ url_for('hrrejection') }}">
+  <button type="button" class="btn btn-secondary">
+   Get rejected by HR now 
+  </button>
+</a>
+
 </div>
 
-<div id="HR" class="tabcontent">
-  <h3>HR Rejection</h3>
-  <p>Automatic generator of HR Rejection letters</p>
+<button class="accordion">Phrasal Verbs</button>
+<div class="panel">
+  <p class="my-3">Random English phrasal verbs generator</p>
+
+<a href="{{ url_for('phrasal_verb') }}">
+  <button type="button" class="btn btn-secondary">
+    Try the Phrasal Verb Generator
+  </button>
+</a>
+
 </div>
 
-<div id="verbs" class="tabcontent">
-  <h3>Phrasal Verbs</h3>
-  <p>Random English phrasal verbs generator.</p> 
-</div>
-
-<div id="bürgeramt" class="tabcontent">
-  <h3>Bürgeramt</h3>
-  <p>Generator of the average dialogue between a foreigner talking to a clerk at a German town hall</p>
+<button class="accordion">Bürgeramt</button>
+<div class="panel">
+  <p> Generator of the average dialogue between a foreigner talking to a clerk at a German town hall </p>
+<a href="{{ url_for('burgeramt') }}">
+  <button type="button" class="btn btn-secondary">
+    Go to the Bürgeramt - forget all the German you know
+  </button>
+</a>
 </div>
 
 <script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
 }
 </script>
-   
+
+
+
+
+
 </body>
 </html> 
 
