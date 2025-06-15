@@ -23,6 +23,7 @@
   <a href="{{ url_for('webapps') }}" class="{% if path == '/webapps' %}active{% endif %}">Web Apps</a>
   <a href="{{ url_for('contact') }}" class="{% if path == '/contact' %}active{% endif %}">Contatti</a>
   <a href="{{ url_for('other') }}" class="{% if path == '/other' %}active{% endif %}">Other Projects</a>
+  <a href="{{ url_for('wacky') }}" class="{% if path == '/wacky' %}active{% endif %}">Wacky Code</a>
   </nav>
 
   <div class="container mt-4">
@@ -33,7 +34,9 @@
 </body>
 
 
-<footer class="custom-footer text-center mt-5">
-  <p>&copy; {{ current_year }}  Arnaldo Pangia — Built with <strong>Python</strong>, <strong>Flask</strong> & <strong>CSS</strong></p>
+<footer class="footer">
+  
+
+   <p>&copy; {{ current_year }}  Arnaldo Pangia — Built with <strong>Python</strong>, <strong>Flask</strong> & <strong>CSS</strong></p>
 </footer>
 </html>

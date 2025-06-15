@@ -36,6 +36,9 @@ def webapps():
 def contact():
     return render_template("contact.html", current_year=datetime.now().year)
 
+@app.route("/wacky")
+def wacky():
+    return render_template("wacky.html", current_year=datetime.now().year)
 
 @app.route("/phrasal_verb")
 def phrasal_verb():
