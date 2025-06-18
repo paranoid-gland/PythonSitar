@@ -1,9 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
     <title>{% block title %}Arnaldo Pangia{% endblock %}</title>
 
@@ -34,17 +34,20 @@
     <a href="{{ url_for('wacky') }}" class="{% if path == '/wacky' %}active{% endif %}">Wacky Code</a>
   </div>
 </nav>
-  <div class="container mt-4">
+<main> 
+<div class="container mt-4">
     {% block content %}
     {% endblock %}
   </div>
+</main>
 
+
+
+  <footer class="footer">
+    
+
+    <p>&copy; {{ current_year }}  Arnaldo Pangia — Built with <strong>Python</strong>, <strong>Flask</strong> & <strong>CSS</strong></p>
+  </footer>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
-
-
-<footer class="footer">
-  
-
-   <p>&copy; {{ current_year }}  Arnaldo Pangia — Built with <strong>Python</strong>, <strong>Flask</strong> & <strong>CSS</strong></p>
-</footer>
 </html>
