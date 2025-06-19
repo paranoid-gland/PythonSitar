@@ -1,0 +1,56 @@
+
+
+.hero-section {
+    position:relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 500px;
+    overflow: hidden;
+    background-image: url("../pictures/arnaldo.jpg");
+    background-size: cover;
+    background-position: 80% 30%;
+    color: white;
+  }
+
+  .hero-text {
+    max-width: 50%;
+    margin-top: 5%;
+    padding-left: 5%;
+    color: #103770;
+  }
+
+  .hero-section h1 {
+    font-size: 4.7rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-payoff{
+    background-color:rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    max-width: fit-content;
+
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  @media (min-width: 992px) {
+  
+    .hero-section {
+      width: 992px;
+      margin: 0 auto;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+    }
+  
+    .hero-text {
+      flex: 0 0 auto;
+    }
+  }

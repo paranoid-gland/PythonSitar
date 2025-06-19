@@ -1,9 +1,17 @@
 {% extends 'base.html' %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
 {% block content %}
-<div class="container-fluid">
-  <h3>Arnaldo Pangia</h3>
-  <p> <br>Making more with less </br></p>
+<section class="hero-section">
+  <div class="hero-text">
+  <h1>Arnaldo Pangia</h1>
+  <div class="hero-payoff">
+  <p> Making more with less</p>
   <p> I am a tech marketer, videomaker, polyglot</p>
-  
+  </div>
 </div>
+</section>
 {% endblock %}
