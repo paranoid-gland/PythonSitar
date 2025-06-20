@@ -1,5 +1,4 @@
 
-
 .hero-section {
     position:relative;
     display: flex;
@@ -32,12 +31,6 @@
     -webkit-backdrop-filter: blur(10px);
     max-width: fit-content;
 
-  }
-  
-  body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
   }
 
   @media (min-width: 992px) {

@@ -1,10 +1,9 @@
 {% extends 'base.html' %}
-
-{% block extra_css %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
-{% endblock %}
-
+{% block title %} Testing title {% endblock %}
 {% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
 <section class="hero-section">
   <div class="hero-text">
   <h1>Arnaldo Pangia</h1>

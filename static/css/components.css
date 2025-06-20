@@ -56,11 +56,14 @@
   
       @media (max-width: 768px) {
     .nav-links {
-      position: absolute;
-      top: 60px;
-      left: 0;
+      background-color:rgba(22, 27, 34, 0.8);
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       width: 100%;
-      background-color: #161b22;
+      position: absolute;
+      top: 70px;
+      right: 0;
       flex-direction: column;
       align-items: center;
       gap: 1.5rem;
@@ -75,6 +78,7 @@
     }
   
     .nav-links.show {
+      z-index: 2;
       opacity: 1;
       max-height: 500px;
       transform: translateY(0);
