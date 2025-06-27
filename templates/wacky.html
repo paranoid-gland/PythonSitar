@@ -6,8 +6,21 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<section class ="title">
+  <h1>Wacky Code</h1>
+</section>
+<section class = "description">
+  <p> The fun corner of my portfolio, where code meets absurdity and automation. <br>
+  These small projects might be silly, but they are a tangible showcase of how I use Python to build creative, and fast ideas.
+Because all in all I don't only code for work. I code for fun. </p>
+</section>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {font-family: Arial;}
 
 /* Style the tab */
 .tab {
@@ -46,15 +59,6 @@ body {font-family: Arial;}
   border-top: none;
 }
 </style>
-</head>
-<body>
-
-<h2>Wacky Code</h2>
-<p> The fun corner of my portfolio, where code meets absurdity and automation. </p>
-<p> These small projects might be silly, but they are a tangible showcase of how I use Python to build creative, and fast ideas. </p>
-<p> Because all in all I don't only code for work. I code for fun. </p>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .accordion {
   background-color: #eee;
@@ -70,20 +74,27 @@ body {font-family: Arial;}
 }
 
 .active, .accordion:hover {
-  background-color: #ccc; 
+  background-color: #ccd6f6;
+  color: #103770
 }
 
 .panel {
-  padding: 0 18px;
+  padding: 18px;
   display: none;
   background-color: white;
+  overflow: hidden;
+  text-align: center;
+  margin:auto;
+  max-width: 40%;
+  padding-bottom: 1rem;
+  border-color: #103770;
+  border-radius: 0 0 10px 10px;
+  flex-direction: column;
   overflow: hidden;
 }
 </style>
 </head>
 <body>
-
-
 <button class="accordion">HR Rejection</button>
 <div class="panel">
   <p class="my-3">Automatic generator of HR Rejection letters</p>
@@ -112,10 +123,26 @@ body {font-family: Arial;}
   <p> Generator of the average dialogue between a foreigner talking to a clerk at a German town hall </p>
 <a href="{{ url_for('burgeramt') }}">
   <button type="button" class="btn btn-secondary">
-    Go to the Bürgeramt - forget all the German you know
+    Go to the Bürgeramt:<br> forget all the German you know
   </button>
 </a>
 </div>
+
+<style>.accordion{
+  display: flex;
+  flex-direction: column;
+  color: #ccd6f6;
+  background-color: #1e2e45;
+  border-bottom: 1px solid #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  margin:auto;
+  max-width: 40%;
+  padding: 1rem;
+}
+</style>
+
 
 <script>
 var acc = document.getElementsByClassName("accordion");

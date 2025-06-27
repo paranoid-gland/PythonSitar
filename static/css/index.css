@@ -1,7 +1,8 @@
-
+/* Mobile Section */
 .hero-section {
     position:relative;
     display: flex;
+    flex-direction:column;
     align-items: flex-start;
     justify-content: flex-start;
     height: 500px;
@@ -13,26 +14,66 @@
   }
 
   .hero-text {
+    flex: 0 0 auto;
     max-width: 50%;
     margin-top: 5%;
     padding-left: 5%;
     color: #103770;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
   }
 
   .hero-section h1 {
-    font-size: 4.7rem;
+    font-size: 6rem;
     margin-bottom: 1rem;
   }
 
   .hero-payoff{
-    background-color:rgba(255, 255, 255, 0.2);
+    background-color:rgba(255, 232, 189, 0.6);
+    padding: 10px;
+    font-size: 1.3rem;
     border-radius: 10px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     max-width: fit-content;
-
   }
 
+  .hero-section-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: center;
+    text-align:center;
+  }
+
+  .hero-text-mobile{
+    opacity: 1;
+    visibility: visible;
+    /* margin-top: 5vh; */
+    padding: 1rem;
+    /* color: #103770; */
+  }
+
+  .hero-text-mobile h1{
+    color: #103770;
+    font-size: 3rem;
+  }
+
+  .hero-text-mobile h4{
+    color: #232323;
+    font-style: italic;
+  }
+
+  .body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+/* Desktop Section */
   @media (min-width: 992px) {
   
     .hero-section {
@@ -44,6 +85,21 @@
     }
   
     .hero-text {
+      opacity: 1;
+      visibility: visible;
       flex: 0 0 auto;
+      max-width: 50%;
+      margin-top: 5%;
+      padding-left: 5%;
+      color: #103770;
     }
+
+    .hero-section-mobile{
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+    }
+
+
+
   }
