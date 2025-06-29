@@ -23,15 +23,15 @@
 </script>
 
 {% set path = request.path %}
-<nav class="nav-scroll">
+<nav class="nav-bar">
   <div class="nav-container">
     <button class="hamburger" onclick="toggleMenu()">☰</button>
   </div>
 
   <div id="nav-links" class="nav-links">
     <a href="{{ url_for('index') }}" class="{% if path == '/' %}active{% endif %}">Home</a>
-    <a href="{{ url_for('webapps') }}" class="{% if path == '/webapps' %}active{% endif %}">Web Apps</a>
-    <a href="{{ url_for('contact') }}" class="{% if path == '/contact' %}active{% endif %}">Contatti</a>
+    <a href="{{ url_for('webapps') }}" class="{% if path == '/webapps' %}active{% endif %}">Apps</a>
+    <a href="{{ url_for('contact') }}" class="{% if path == '/contact' %}active{% endif %}">Keep in touch</a>
     <a href="{{ url_for('other') }}" class="{% if path == '/other' %}active{% endif %}">Other Projects</a>
     <a href="{{ url_for('wacky') }}" class="{% if path == '/wacky' %}active{% endif %}">Wacky Code</a>
   </div>
