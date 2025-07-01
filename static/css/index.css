@@ -6,6 +6,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     height: 500px;
+    /* height:auto; */
     overflow: hidden;
     background-image: url("../pictures/arnaldo.jpg");
     background-size: cover;
@@ -43,7 +44,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: center;
     text-align:center;
   }
 
@@ -65,17 +65,19 @@
     font-style: italic;
   }
 
-  .body{
+  .bio{
     display:flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    text-align: center;
     padding-left: 2rem;
     padding-right: 2rem;
+
   }
 
 /* Desktop Section */
   @media (min-width: 992px) {
-  
     .hero-section {
       width: 992px;
       margin: 0 auto;
@@ -87,19 +89,19 @@
     .hero-text {
       opacity: 1;
       visibility: visible;
-      flex: 0 0 auto;
-      max-width: 50%;
-      margin-top: 5%;
-      padding-left: 5%;
-      color: #103770;
     }
 
     .hero-section-mobile{
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+      display:none;
     }
 
+    .bio{
+      position:relative;
+      max-width: 992px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top:30px;
 
 
   }
+}
