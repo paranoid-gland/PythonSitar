@@ -19,82 +19,90 @@ Because all in all I don't only code for work. I code for fun. </p>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
 
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-</style>
-<style>
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: #ccd6f6;
-  color: #103770
-}
-
-.panel {
-  padding: 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
-  text-align: center;
-  margin:auto;
-  max-width: 40%;
-  padding-bottom: 1rem;
-  border-color: #103770;
-  border-radius: 0 0 10px 10px;
-  flex-direction: column;
-  overflow: hidden;
-}
-</style>
 </head>
 <body>
-<button class="accordion">HR Rejection</button>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          HR Rejection
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Automatic generator of HR Rejection letters.</div>
+        <a href="{{ url_for('hrrejection') }}">
+          <button type="button" class="btn btn-secondary">
+           Get rejected by HR now 
+          </button>
+        </a>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          Phrasal Verbs
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Random English phrasal verbs generator.</div>
+        <a href="{{ url_for('phrasal_verb') }}">
+          <button type="button" class="btn btn-secondary">
+            Try the Phrasal Verb Generator
+          </button>
+        </a>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          Bürgeramt
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Generator of the average dialogue between a foreigner talking to a clerk at a German town hall</div>
+        <a href="{{ url_for('burgeramt') }}">
+          <button type="button" class="btn btn-secondary">
+            Go to the Bürgeramt:<br> forget all the German you know
+          </button>
+        </a>
+      </div>  
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+          Seinfeld 2021
+        </button>
+      </h2>
+      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">If Seinfeld took place in 2021</div>
+        <a href="{{ url_for('seinfeld_opening') }}">
+          <button type="button" class="btn btn-secondary">
+            A button about nothing
+          </button>
+          </a>
+      </div>  
+    </div>
+
+
+
+  </div>
+
+
+
+<!-- <button class="accordion">HR Rejection</button>
 <div class="panel">
   <p class="my-3">Automatic generator of HR Rejection letters</p>
 <a href="{{ url_for('hrrejection') }}">
@@ -103,9 +111,9 @@ Because all in all I don't only code for work. I code for fun. </p>
   </button>
 </a>
 
-</div>
+</div> -->
 
-<button class="accordion">Phrasal Verbs</button>
+<!-- <button class="accordion">Phrasal Verbs</button>
 <div class="panel">
   <p class="my-3">Random English phrasal verbs generator</p>
 
@@ -115,9 +123,9 @@ Because all in all I don't only code for work. I code for fun. </p>
   </button>
 </a>
 
-</div>
+</div> -->
 
-<button class="accordion">Bürgeramt</button>
+<!-- <button class="accordion">Bürgeramt</button>
 <div class="panel">
   <p> Generator of the average dialogue between a foreigner talking to a clerk at a German town hall </p>
 <a href="{{ url_for('burgeramt') }}">
@@ -125,8 +133,8 @@ Because all in all I don't only code for work. I code for fun. </p>
     Go to the Bürgeramt:<br> forget all the German you know
   </button>
 </a>
-</div>
-
+</div> -->
+<!-- 
 <button class="accordion">Seinfeld 2021</button>
 <div class="panel">
   <p> If Seinfeld took place in 2021 </p>
@@ -135,25 +143,39 @@ Because all in all I don't only code for work. I code for fun. </p>
     A button about nothing
   </button>
 </a>
-</div>
+</div> -->
 
-<style>.accordion{
+<style>
+
+.accordion{
   display: flex;
   flex-direction: column;
   color: #ccd6f6;
-  background-color: #1e2e45;
-  border-bottom: 1px solid #ffffff;
+  /* background-color: #1e2e45; */
+  /* border-bottom: 1px solid #ffffff; */
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
   margin:auto;
-  max-width: 40%;
+  max-width: 80%;
   padding: 1rem;
+}
+
+.accordion .accordion-button:not(.collapsed) {
+  background-color: #1ccd6f6;
+  color: #1e2e45;
+  border-radius: 6px !important;
+}
+
+.accordion .btn-secondary{
+  margin-bottom: 30px;
+  /* background-color: #ccd6f6;
+  color:#1e2e45; */
 }
 </style>
 
 
-<script>
+<!-- <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -168,7 +190,7 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-</script>
+</script> -->
 
 
 

@@ -4,51 +4,46 @@
 
 <div class="container">
   <div class="jumbotron">
-	  <h1><center> HR Rejection Generator </center></h1>
-	  <hr class="solid">
-      <p> {{data.hr_part1}} Arnaldo,
+    <h1>
+      <center> HR Rejection Generator </center>
+    </h1>
+    <hr class="solid">
+    <p> {{data.hr_part1}} Arnaldo,
       <br> {{data.hr_part2}} that you {{data.hr_part3}} to this application.
-      <p> {{data.hr_part4}} we cannot proceed with your recruiting process this time.
-      <p> Please note that our decision was not based on your capabilities, but rather with your compatibility with the open position.
+    <p> {{data.hr_part4}} we cannot proceed with your recruiting process this time.
+    <p> Please note that our decision was not based on your capabilities, but rather with your compatibility with the
+      open position.
       <br> {{data.hr_part5}}
-      <p> {{data.hr_part6}} your future work endeavours.
-      <p> Best regards,
+    <p> {{data.hr_part6}} your future work endeavours.
+    <p> Best regards,
 
 
-      <div class="form-group">
-      </div>
-</div>
-  <center><button onclick=location.reload() type="button" class="btn btn-secondary">
-		  New job application</button></center>
-<!--  <input type="text" class="form-control" id="candidate" Placeholder="Name of the candidate">
-      </p>
-      <button type="button" class="btn btn-dark btn-lg btn-block" data-toggle="modal" data-target="#myModal">Send Application</button>
-
-<!-- The Modal -->
-<div class="modal fade" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-          <h4 class="modal-title"> New E-mail!</h4>
-                      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-          Hello     <p id="candidate"></p>  </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-      </div>
-
+    <div class="form-group">
     </div>
   </div>
+  <button onclick=location.reload() type="button" class="btn btn-secondary">New job application</button>
+  <button onclick="location.href='{{ url_for('wacky') }}'" type="button" class="btn btn-outline-secondary">
+    Back to Wacky Code
+  </button>
+<style>
+
+.btn-secondary,
+.btn-outline-secondary{
+  display:flex;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+
+
+}
+
+
+</style>
+
+
 </div>
-
-
-      </div>
-
-  </div> 
-  {% endblock %}
+</div>
+</div>
+</div>
+{% endblock %}
