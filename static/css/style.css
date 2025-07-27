@@ -21,7 +21,36 @@ main{
 
     }
 
-    /* @media (max-width: 768px) {
+  .bio{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
   }
-} */
+
+  .bio a {
+  color: #2a5897;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+  .bio a:hover {
+    text-decoration: underline;
+  }
+
+  /* Desktop Section */
+  @media (min-width: 992px) {
+     .bio{
+      position:relative;
+      max-width: 992px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top:30px;
+
+
+  }
+}

@@ -50,9 +50,7 @@
   .hero-text-mobile{
     opacity: 1;
     visibility: visible;
-    /* margin-top: 5vh; */
     padding: 1rem;
-    /* color: #103770; */
   }
 
   .hero-text-mobile h1{
@@ -65,16 +63,6 @@
     font-style: italic;
   }
 
-  .bio{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
-
-  }
 
 /* Desktop Section */
   @media (min-width: 992px) {
@@ -94,14 +82,4 @@
     .hero-section-mobile{
       display:none;
     }
-
-    .bio{
-      position:relative;
-      max-width: 992px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top:30px;
-
-
-  }
 }

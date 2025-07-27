@@ -22,9 +22,9 @@ def index():
     return render_template("index.html", current_year=datetime.now().year)
 
 
-@app.route("/other")
-def other():
-    return render_template("other.html", current_year=datetime.now().year)
+@app.route("/previous")
+def previous():
+    return render_template("previous.html", current_year=datetime.now().year)
 
 
 @app.route("/webapps")

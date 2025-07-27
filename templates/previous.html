@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/previousprojects.css') }}">
+<section class="title">
+  <h1>Previous Projects</h1>
+</section>
+
+<div class="bio">
+  <h2>Barbaroffa</h2>
+  <p>
+    Active from 2014 to 2024, <strong>Barbaroffa</strong> was a cross-platform content project spanning 
+    <a href="https://www.youtube.com/@barbaroffa" target="_blank" rel="noopener noreferrer"><strong>YouTube</strong></a> (77k subscribers), 
+    <a href="https://www.instagram.com/barbaroffa" target="_blank" rel="noopener noreferrer"><strong>Instagram</strong></a> (20k followers), and 
+    <a href="https://www.tiktok.com/@barbaroffa" target="_blank" rel="noopener noreferrer"><strong>TikTok</strong></a> (10k followers).
+  </p>
+
+  <p>
+    Initially launched with a focus on gaming, the project evolved into a channel for <strong>current affairs commentary</strong>, 
+    <strong>international communication</strong>, and <strong>language content for Italian audiences</strong>.
+  </p>
+
+  <p>
+    The content had a strong generalist orientation, combining global narratives with culturally tailored storytelling. 
+    Over <strong>15 million organic views</strong> were generated in the Italian market across more than 900 published pieces.
+  </p>
+
+  <p>
+    The project was monetized through multiple streams, including 
+    <strong>Amazon affiliate marketing</strong></a>, 
+    <strong>brand collaborations</strong>, <strong>consulting services</strong>, and 
+    <a href="https://www.udemy.com/user/arnaldo-pangia/" target="_blank" rel="noopener noreferrer"><strong>Udemy video courses</strong></a>.
+  </p>
+
+  <p>
+    Barbaroffa functioned as an independent media lab—testing editorial formats, iterating across channels, and building 
+    community without paid promotion. The project demonstrated agility in <strong>content strategy</strong>, 
+    <strong>cross-platform adaptation</strong>, and <strong>audience development</strong>.
+  </p>
+</div>
+<section class="collab-title-section">
+  
+  <h2>Selected Mentions</h2>
+</section>
+<div class="slider-track">
+  <a href="https://www.open.online/2019/02/05/asmr-cosi-brividi-e-sussurri-hanno-conquistato-youtube/" target="_blank" rel="noopener noreferrer">
+    <img src="{{ url_for('static', filename='pictures/open.png') }}" alt="Open logo">
+  </a>
+  <a href="https://it.mashable.com/entertainment/994/dovremmo-smettere-di-condividere-io-sono-giorgia-questo-video-spiega-perche" target="_blank" rel="noopener noreferrer">
+    <img src="{{ url_for('static', filename='pictures/mashable.png') }}" alt="Mashable logo">
+  </a>
+<a href="https://edulia.it/docenti/arnaldo-pangia/" target="_blank" rel="noopener noreferrer">
+    <img src="{{ url_for('static', filename='pictures/edulia.png') }}" alt="Edulia logo">
+  </a>
+</div>
+
+
+
+{% endblock %}
