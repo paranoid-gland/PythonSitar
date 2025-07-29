@@ -42,6 +42,59 @@ main{
     text-decoration: underline;
   }
 
+  .accordion{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+    margin:auto;
+    max-width: 60%;
+    padding: 1rem;
+  }
+  
+  .accordion .accordion-button:not(.collapsed) {
+    background-color: #ccd6f6;
+    color: #1e2e45;
+    font-weight: bold;
+    border-radius: 6px;
+    border-color: #1e2e45;
+  }
+
+  .accordion .accordion-button.collapsed {
+    border-radius: 6px;
+    color: #1e2e45;
+    font-weight: bold;
+    border-radius: 6px;
+    border-color: #1e2e45;
+  }
+  
+  .btn-secondary{
+    margin-bottom: 1rem;
+    background-color: #1e2e45;
+    color: #ccd6f6;
+  }
+
+  .btn-secondary:hover {
+    margin-bottom: 1rem;
+    background-color:#ccd6f6;
+    color: #1e2e45;
+  }
+
+  .btn-tertiary{
+    margin-bottom: 1rem;
+    color: #1e2e45;
+  }
+
+  .btn-tertiary:hover {
+    margin-bottom: 1rem;
+    color: #1e2e45;
+    border-color: #1e2e45;
+  }
+  
+  .centered-buttons .btn {
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
   /* Desktop Section */
   @media (min-width: 992px) {
      .bio{

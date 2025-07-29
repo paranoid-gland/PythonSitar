@@ -17,31 +17,9 @@
     <p> {{data.hr_part6}} your future work endeavours.
     <p> Best regards,
 
-
-    <div class="form-group">
     </div>
   </div>
-  <button onclick=location.reload() type="button" class="btn btn-secondary">New job application</button>
-  <button onclick="location.href='{{ url_for('wacky') }}'" type="button" class="btn btn-outline-secondary">
-    Back to Wacky Code
-  </button>
-<style>
-
-.btn-secondary,
-.btn-outline-secondary{
-  display:flex;
-  margin-left:auto;
-  margin-right:auto;
-  margin-bottom: 20px;
-  margin-top: 10px;
-
-
-}
-
-
-</style>
-
-
+  {% include 'wackynav.html' %}
 </div>
 </div>
 </div>
