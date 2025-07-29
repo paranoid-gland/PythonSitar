@@ -27,8 +27,7 @@ main{
     align-items: center;
     width: 100%;
     text-align: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 2rem;
 
   }
 
