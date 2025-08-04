@@ -13,27 +13,19 @@ from burgeramt import (
 from hrrejection import hr_part1, hr_part2, hr_part3, hr_part4, hr_part5, hr_part6
 from seinfeld import seinf_part1, seinf_part2, seinf_part3, seinf_part4
 
-
 app = Flask(__name__)
-
-import os
-port = int(os.environ.get("PORT", 80))
-app.run(host="0.0.0.0", port=port)
 
 @app.route("/")
 def index():
     return render_template("index.html", current_year=datetime.now().year)
 
-
 @app.route("/previous")
 def previous():
     return render_template("previous.html", current_year=datetime.now().year)
 
-
 @app.route("/webapps")
 def webapps():
     return render_template("webapps.html", current_year=datetime.now().year)
-
 
 @app.route("/contact")
 def contact():
@@ -48,7 +40,6 @@ def phrasal_verb():
     return render_template(
         "phrasal_verb.html", data={"definition": definition(), "verb": generated_verb()}
     )
-
 
 @app.route("/burgeramt")
 def burgeramt():
@@ -65,7 +56,6 @@ def burgeramt():
         },
     )
 
-
 @app.route("/hrrejection")
 def hrrejection():
     return render_template(
@@ -80,7 +70,6 @@ def hrrejection():
         },
     )
 
-
 @app.route("/seinfeld")
 def seinfeld_opening():
     return render_template(
@@ -93,6 +82,7 @@ def seinfeld_opening():
         },
     )
 
-
-# if __name__ == "__main__":
-#     app.run(host="0.0.0.0", port="8000", debug=True)
+if __name__ == "__main__":
+    import os
+    port = int(os.environ.get("PORT", 80))
+    app.run(host="0.0.0.0", port=port)
