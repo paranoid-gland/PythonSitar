@@ -1,7 +1,3 @@
-import os
-port = int(os.environ.get("PORT", 80))
-app.run(host="0.0.0.0", port=port)
-
 from flask import Flask, render_template
 from datetime import datetime
 from phrasal_verb import definition, generated_verb
@@ -20,6 +16,9 @@ from seinfeld import seinf_part1, seinf_part2, seinf_part3, seinf_part4
 
 app = Flask(__name__)
 
+import os
+port = int(os.environ.get("PORT", 80))
+app.run(host="0.0.0.0", port=port)
 
 @app.route("/")
 def index():
