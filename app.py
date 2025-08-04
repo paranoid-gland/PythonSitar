@@ -1,3 +1,7 @@
+import os
+port = int(os.environ.get("PORT", 80))
+app.run(host="0.0.0.0", port=port)
+
 from flask import Flask, render_template
 from datetime import datetime
 from phrasal_verb import definition, generated_verb
