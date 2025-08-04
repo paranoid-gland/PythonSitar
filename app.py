@@ -14,6 +14,13 @@ from hrrejection import hr_part1, hr_part2, hr_part3, hr_part4, hr_part5, hr_par
 from seinfeld import seinf_part1, seinf_part2, seinf_part3, seinf_part4
 
 app = Flask(__name__)
+from flask import redirect, request
+
+@app.before_request
+def redirect_to_www():
+    host = request.host
+    if host.startswith("arnaldopangia.com"):
+        return redirect(f"https://www.arnaldopangia.com{request.full_path}", code=301)
 
 @app.route("/")
 def index():
