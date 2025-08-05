@@ -15,6 +15,15 @@ from seinfeld import seinf_part1, seinf_part2, seinf_part3, seinf_part4
 
 app = Flask(__name__)
 from flask import redirect, request
+from flask import send_from_directory
+
+@app.route('/robots.txt')
+def robots():
+    return send_from_directory('static', 'robots.txt')
+
+@app.route('/sitemap.xml')
+def sitemap():
+    return send_from_directory('static', 'sitemap.xml')
 
 @app.before_request
 def redirect_to_www():
