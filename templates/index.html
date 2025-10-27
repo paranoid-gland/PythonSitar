@@ -3,26 +3,18 @@
 {% block content %}
 
 <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
-
-<section class="hero-section">
-  <div class="hero-text">
-  <h1>Arnaldo Pangia</h1>
-  <div class="hero-payoff">
-  <h3> Making more with Less</h3>
-  <p> I am a tech marketer,<br> content creator, polyglot</p>
-  </div>
-</div>
-</section>
-<section class ="hero-section-mobile">
-  <div class="hero-text-mobile">
-    <h1>Arnaldo Pangia</h1>
-    <div class="hero-payoff-mobile">
-      <h4> Making more with Less</h4>
-      <p> I am a tech marketer, content creator, polyglot</p>
-      </div>
-      </div>
-    </section>
     
+<section class="hero-section">
+  <div class="hero-image-container">
+    <img src="/static/pictures/triangle.svg" alt="" class="hero-triangle-image">
+    <img src="/static/pictures/arnaldohero.png" alt="Arnaldo Pangia" class="hero-image">
+  </div>
+  <div class="hero-text">
+    <img src="/static/pictures/logo.png" alt="Arnaldo Pangia" class="hero-logo">
+    <p class="hero-tagline">Marketing tech<br>with a product mindset</p>
+  </div>
+</section>
+
   <div class="bio">
     <p>
       I bridge the gap between <strong>content</strong>, <strong>tech</strong>, and <strong>stakeholders</strong>.

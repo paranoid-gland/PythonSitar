@@ -11,19 +11,19 @@
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     
 
-    <title>Arnaldo Pangia - Digital Projects, Automation & Product Thinking</title>
+    <title>Arnaldo Pangia - Marketing tech with a product mindset</title>
     <meta name="description" content="The personal website of Arnaldo Pangia - exploring automation, digital workflows, and product thinking. Former content creator with 100k+ audience and 15M+ views.">
     <meta name="author" content="Arnaldo Pangia">
     <meta name="robots" content="index, follow">
 
-    <meta property="og:title" content="Arnaldo Pangia - Digital Projects, Automation & Product Thinking">
+    <meta property="og:title" content="Arnaldo Pangia - Marketing tech with a product mindset">
     <meta property="og:description" content="Discover automation tools, product-focused projects, and digital experiments by Arnaldo Pangia - former creator with 80k+ audience.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.arnaldopangia.com">
     <meta property="og:image" content="https://www.arnaldopangia.com/static/pictures/preview.jpg">
   
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Arnaldo Pangia - Digital Projects, Automation & Product Thinking">
+    <meta name="twitter:title" content="Arnaldo Pangia - Marketing tech with a product mindset">
     <meta name="twitter:description" content="A tech-minded space by Arnaldo Pangia for product, automation, and content experiments.">
     <meta name="twitter:image" content="https://www.arnaldopangia.com/static/pictures/preview.jpg">
   
@@ -40,6 +40,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/components.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/contentpage.css') }}">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -53,15 +55,20 @@
 {% set path = request.path %}
 <nav class="nav-bar">
   <div class="nav-container">
-    <button class="hamburger" onclick="toggleMenu()">☰</button>
-  </div>
-
-  <div id="nav-links" class="nav-links">
-    <a href="{{ url_for('index') }}" class="{% if path == '/' %}active{% endif %}">Home</a>
-    <a href="{{ url_for('webapps') }}" class="{% if path == '/webapps' %}active{% endif %}">Apps</a>
-    <a href="{{ url_for('contact') }}" class="{% if path == '/contact' %}active{% endif %}">Keep in touch</a>
-    <a href="{{ url_for('previous') }}" class="{% if path == '/previous' %}active{% endif %}">Previous Projects</a>
-    <a href="{{ url_for('wacky') }}" class="{% if path == '/wacky' %}active{% endif %}">Wacky Code</a>
+    <div class="nav-left">
+      <a href="/" class="logo">
+        <img src="/static/pictures/logowhite.svg" alt="Logo">
+      </a>
+    </div>
+    <div class="nav-right">
+<div id="nav-links" class="nav-links">
+    <a href="/webapps" class="{% if path == '/webapps' %}active{% endif %}">Apps</a>
+    <a href="/contact" class="{% if path == '/contact' %}active{% endif %}">Keep in touch</a>
+    <a href="/previous" class="{% if path == '/previous' %}active{% endif %}">Projects</a>
+    <a href="/wacky" class="{% if path == '/wacky' %}active{% endif %}">Wacky Code</a>
+</div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </div>
   </div>
 </nav>
 <main> 
@@ -72,8 +79,6 @@
 
 
   <footer class="footer">
-    
-
     <p>&copy; {{ current_year }}  Arnaldo Pangia — Built with <strong>Python</strong>, <strong>Flask</strong> & <strong>CSS</strong></p>
   </footer>
   <script src="{{ url_for('static', filename='js/main.js') }}"></script>

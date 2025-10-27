@@ -1,6 +1,6 @@
 .venv/
 __pycache__/
 .basebak.html
-.DS_Storei
+.DS_Store
 static/.DS_Store
 static/pictures/.DS_Store
