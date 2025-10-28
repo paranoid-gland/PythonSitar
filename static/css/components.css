@@ -75,7 +75,6 @@
   .nav-links {
     background-color: var(--color-primary-dark);
     border-radius: 0px 0px 10px 10px;
-
     width: 100%;
     position: absolute;
     top: 56px;
@@ -91,10 +90,11 @@
   }
 
   .nav-links.show {
-    z-index: 2;
+    z-index: 98;
     opacity: 1;
     max-height: 500px;
     pointer-events: all;
+    text-align: right;
   }
 
   .hamburger {

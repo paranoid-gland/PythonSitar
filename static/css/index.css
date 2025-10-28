@@ -55,3 +55,45 @@
   letter-spacing: 10px;
   word-spacing: 10px;
 }
+
+@media (max-width: 600px) {
+  .hero-section{
+  padding: 0%;
+  flex-direction: column;
+  width:100%;
+  height: auto;
+  overflow:visible;
+  gap:0;
+  
+  }
+  .hero-image-container{
+    flex:none;
+    width: 90dvw;
+    height: 33dvh;
+    
+  }
+
+  .hero-triangle-image {
+    height: 100%;
+  }
+
+  .hero-image {
+    height: 100%;
+  }
+
+  .hero-text {
+    width: 90dvw;
+    height: 17dvh;
+  }
+  .hero-logo {
+    width:100%;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .hero-tagline {
+    text-align: left;
+    font-size: 1rem;
+    padding-left: 10px;
+  }
+}
