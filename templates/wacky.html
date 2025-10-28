@@ -1,107 +1,37 @@
 {% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
 {% block content %}
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-</head>
-<body>
-<section class ="title">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/wacky.css') }}">
+<div class = "description">
   <h1>Wacky Code</h1>
-</section>
-<section class = "description">
-  <p> The fun corner of my portfolio, where code meets absurdity and automation. <br>
-  These small projects might be silly, but they are a tangible showcase of how I use Python to build creative, and fast ideas.
-Because all in all I don't only code for work. I code for fun. </p>
-</section>
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-</head>
-<body>
-  <div class="accordion accordion-flush" id="accordionFlushExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          HR Rejection
-        </button>
-      </h2>
-      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Automatic generator of HR Rejection letters.</div>
-        <a href="{{ url_for('hrrejection') }}">
-          <button type="button" class="btn btn-secondary">
-           Get rejected by HR now 
-          </button>
-        </a>
-      </div>
-    </div>
-
-
-
-
-
-
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-          Phrasal Verbs
-        </button>
-      </h2>
-      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Random English phrasal verbs generator.</div>
-        <a href="{{ url_for('phrasal_verb') }}">
-          <button type="button" class="btn btn-secondary">
-            Try the Phrasal Verb Generator
-          </button>
-        </a>
-      </div>
-    </div>
-
-
-
-
-
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-          Bürgeramt
-        </button>
-      </h2>
-      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Generator of the average dialogue between a foreigner talking to a clerk at a German town hall</div>
-        <a href="{{ url_for('burgeramt') }}">
-          <button type="button" class="btn btn-secondary">
-            Go to the Bürgeramt:<br> forget all the German you know
-          </button>
-        </a>
-      </div>  
-    </div>
-
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-          Seinfeld 2021
-        </button>
-      </h2>
-      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">If Seinfeld took place in 2021</div>
-        <a href="{{ url_for('seinfeld_opening') }}">
-          <button type="button" class="btn btn-secondary">
-            A button about nothing
-          </button>
-          </a>
-      </div>  
-    </div>
-
-
-
+  <p>A collection of <b>high-effort</b>, <b>low-impact apps</b>. <br>
+The apps are coded in Python and run on Flask, natively rendered through JavaScript, HTML, and CSS.<br>
+<b>Full-stack</b> because I'm <b>smart</b>. <br>(or for lack of better words)</p>
   </div>
+<div class="wacky-menu">
+  <a href="{{ url_for('phrasal_verb') }}" class="wacky-menu-button">
+    <h2>Phrasal Verb generator</h2>
+    <p>English phrasal verbs are made up. <br>Change my mind.</p>
+  </a>
 
+  <a href="{{ url_for('hrrejection') }}" class="wacky-menu-button">
+    <h2>HR Rejection generator</h2>
+    <p>In case you needed to read more of these...</p>
+  </a>
 
+    <a href="{{ url_for('burgeramt') }}" class="wacky-menu-button">
+    <h2>Ausländer im Bürgeramt</h2>
+    <p>Nur Deutsch, bitte!</p>
+  </a>
 
+    <a href="{{ url_for('seinfeld_opening') }}" class="wacky-menu-button">
+    <h2>Seinfeld Opening 2020</h2>
+    <p>Old references for a crazy year.</p>
+  </a>
+</div>
 </body>
 </html> 
 

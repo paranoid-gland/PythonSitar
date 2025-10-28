@@ -2,12 +2,19 @@
   --color-primary-dark: #0b0b0b;
   --color-primary-light: #ffffff;
   --color-primary-accent: #EE6C4D;
-  --color-secondary-dark: #171a1d;
+  --color-secondary-dark: #777879;
 }
 
 * {
   font-family: 'Inter', sans-serif;
 }
+
+/* p {
+    font-weight: 100;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+
+} */
 
 body{
   display: flex;
@@ -35,12 +42,14 @@ main{
 
 .footer {
   bottom: 0;
+  letter-spacing: 0px;
+  word-spacing: 0px;
   width: 100%;
   padding: 1.5rem 0;
   background-color: var(--color-primary-dark) !important;
   color: var(--color-primary-light) !important;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   border-top: 3px solid var(--color-primary-accent);
 }
 
@@ -55,7 +64,7 @@ main{
   }
 
   .bio a {
-  color: #2a5897;
+  color: var(--color-primary-accent)
   text-decoration: none;
   font-weight: 500;
 }
@@ -64,53 +73,29 @@ main{
     text-decoration: underline;
   }
 
-  .accordion{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    text-align: center;
-    margin:auto;
-    max-width: 60%;
-    padding: 1rem;
-  }
-  
-  .accordion .accordion-button:not(.collapsed) {
-    background-color: #ccd6f6;
-    color: #1e2e45;
-    font-weight: bold;
-    border-radius: 6px;
-    border-color: #1e2e45;
-  }
-
-  .accordion .accordion-button.collapsed {
-    border-radius: 6px;
-    color: #1e2e45;
-    font-weight: bold;
-    border-radius: 6px;
-    border-color: #1e2e45;
-  }
-  
   .btn-secondary{
     margin-bottom: 1rem;
-    background-color: #1e2e45;
-    color: #ccd6f6;
+    background-color: var(--color-primary-dark);
+    color: var(--color-primary-light);
   }
 
   .btn-secondary:hover {
     margin-bottom: 1rem;
-    background-color:#ccd6f6;
-    color: #1e2e45;
+    font-weight: bold;
+    border-radius: 6px;
+    background-color:var(--color-primary-accent);
+    color: var(--color-primary-dark);
   }
 
   .btn-tertiary{
     margin-bottom: 1rem;
-    color: #1e2e45;
+    color: var(--color-primary-dark);
   }
 
   .btn-tertiary:hover {
     margin-bottom: 1rem;
-    color: #1e2e45;
-    border-color: #1e2e45;
+    color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
   }
   
   .centered-buttons .btn {
