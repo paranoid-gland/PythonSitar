@@ -8,6 +8,11 @@
   margin: 0 auto;
 }
 
+.bio {
+  text-align: left;
+  font-size: 1.7rem;
+}
+
 .hero-image-container {
   flex: 1;
   position: relative;
@@ -67,6 +72,11 @@
   gap:0;
   
   }
+
+  .bio {
+  text-align: left;
+  font-size: 1.3rem;
+}
   .hero-image-container{
     margin: 0;
     flex:none;
