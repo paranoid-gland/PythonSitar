@@ -9,13 +9,6 @@
   font-family: 'Inter', sans-serif;
 }
 
-/* p {
-    font-weight: 100;
-    letter-spacing: 3px;
-    word-spacing: 5px;
-
-} */
-
 body{
   display: flex;
   flex-direction: column;
@@ -58,18 +51,17 @@ main{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    text-align: center;
     padding: 2rem;
 
   }
 
-  .bio a {
-  color: var(--color-primary-accent)
+a {
+  color: var(--color-primary-accent);
   text-decoration: none;
   font-weight: 500;
 }
 
-  .bio a:hover {
+a:hover {
     text-decoration: underline;
   }
 
@@ -102,6 +94,28 @@ main{
     display: block;
     margin: 0 auto 1rem auto;
   }
+
+  .dark-divider-medium {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 1rem 1rem;
+}
+
+.dark-divider-medium h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+  .contentbox{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 2rem;
+
+  }
+
   /* Desktop Section */
   @media (min-width: 992px) {
      .bio{

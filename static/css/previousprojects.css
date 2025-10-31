@@ -9,17 +9,6 @@ padding: 0 3rem;
   margin: 1rem auto 2rem auto;
 }
 
-.collab-title-section {
-  background-color: #000;
-  color: white;
-  text-align: center;
-  padding: 1rem 1rem;
-}
-
-.collab-title-section h2 {
-  font-size: 2rem;
-  margin: 0;
-}
 
 .collaborations-slider {
   display: flex;
