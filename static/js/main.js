@@ -5,4 +5,8 @@ document.addEventListener('click', function(event) {
   if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
     menu.classList.remove("show");
   }
+  
+  if (event.target.tagName === 'A' && menu.contains(event.target)) {
+    menu.classList.remove("show");
+  }
 });

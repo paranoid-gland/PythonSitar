@@ -13,6 +13,7 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding-top: 60px;
 }
 
 main{
@@ -106,15 +107,6 @@ a:hover {
   font-size: 2rem;
   margin: 0;
 }
-
-  .contentbox{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    width: auto;
-    padding: 2rem;
-
-  }
 
   /* Desktop Section */
   @media (min-width: 992px) {

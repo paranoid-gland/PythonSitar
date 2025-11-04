@@ -3,6 +3,10 @@
   justify-content: center;
   background: var(--color-primary-dark);
   padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .nav-container {
@@ -63,6 +67,7 @@
 
 .nav-links a:hover {
   border-color: var(--color-primary-accent);
+  text-decoration: none;
 }
 
 .nav-links a.active {
@@ -94,7 +99,7 @@
     opacity: 1;
     max-height: 500px;
     pointer-events: all;
-    text-align: right;
+    text-align: left;
   }
 
   .hamburger {
