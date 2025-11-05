@@ -3,15 +3,15 @@
 
 
 <div class="container">
-  <div class="jumbotron">
-	  <h1><center> Ausländer im Burgeramt </center></h1>
+  <div class="wackybox">
+	  <h1> Ausländer im Burgeramt</h1>
 	  <hr class="solid">
-      <p> - Guten Tag! {{data.part1}}, Ich {{data.part2}} nur ein bisschen Deutsch! </p>
-      <p> - Naja... was brauchen Sie?</p> 
-      <p> - Ich {{data.part3}} ein {{data.part4}} </p> 
-      <p> - Haben Sie die {{data.part5}} mitgebraucht? </p> 
-      <p> - {{data.part6}}! {{data.part7}}?  </p>
-      <p> - Ohne {{data.part5}} kann Ich nichts machen. Nehmen Sie 'nen anderen Termin und kommen Sie zurück. <br> Nächster!</p> 
+      <p class ="auslander"> - Guten Tag! {{data.part1}}, Ich {{data.part2}} nur ein bisschen Deutsch! </p>
+      <p class ="clerk"> - Naja, wat willste denn? Siehste, hier kommste nich einfach so rein, wa?</p> 
+      <p class ="auslander"> - ...Eh?! Uh...Ich {{data.part3}} ein {{data.part4}} </p> 
+      <p class ="clerk"> - Haste die {{data.part5}} mitjebrach? </p> 
+      <p class ="auslander"> - {{data.part6}}! {{data.part7}}?  </p>
+      <p class ="clerk"> - Ohne {{data.part5}} kann Ick nix machen. Mach dir einen neuen Termin aus und komm später wieder. <br>  Nächster! Zack zack!</p> 
   </div>
   {% include 'wackynav.html' %}
  

@@ -66,35 +66,37 @@ a:hover {
     text-decoration: underline;
   }
 
+  .wackynav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+    gap: 2rem;
+  }
   .btn-secondary{
-    margin-bottom: 1rem;
     background-color: var(--color-primary-dark);
+    border-radius: 6px;
     color: var(--color-primary-light);
+    font-size: 2rem;
   }
 
   .btn-secondary:hover {
-    margin-bottom: 1rem;
-    font-weight: bold;
     border-radius: 6px;
     background-color:var(--color-primary-accent);
     color: var(--color-primary-dark);
+    font-size: 2rem;
   }
 
   .btn-tertiary{
-    margin-bottom: 1rem;
     color: var(--color-primary-dark);
+      font-size: 2rem;
   }
 
   .btn-tertiary:hover {
-    margin-bottom: 1rem;
     color: var(--color-primary-dark);
     border-color: var(--color-primary-dark);
   }
   
-  .centered-buttons .btn {
-    display: block;
-    margin: 0 auto 1rem auto;
-  }
 
   .dark-divider-medium {
   background-color: #000;
@@ -108,6 +110,23 @@ a:hover {
   margin: 0;
 }
 
+    .wackybox {
+      position:relative;
+      max-width: 992px;
+      margin-left: auto;
+      margin-right: auto;
+      padding:5dvh 0dvh 10dvh 0dvh;
+    }
+    .wackybox h1 {
+      text-align: center;
+    }
+
+        .wackybox p {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    
+
   /* Desktop Section */
   @media (min-width: 992px) {
      .bio{
@@ -116,7 +135,5 @@ a:hover {
       margin-left: auto;
       margin-right: auto;
       padding-top:30px;
-
-
   }
 }
