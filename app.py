@@ -23,7 +23,18 @@ def robots():
 
 @app.route('/sitemap.xml')
 def sitemap():
-    return send_from_directory('static', 'sitemap.xml')
+    base_url = 'https://www.arnaldopangia.com'
+    urls = [
+        {'loc': f'{base_url}/', 'changefreq': 'weekly', 'priority': 1.0},
+        {'loc': f'{base_url}/projects', 'changefreq': 'monthly', 'priority': 0.9},
+        {'loc': f'{base_url}/wacky', 'changefreq': 'monthly', 'priority': 0.5},
+        {'loc': f'{base_url}/phrasal_verb', 'changefreq': 'weekly', 'priority': 0.3},
+        {'loc': f'{base_url}/burgeramt', 'changefreq': 'weekly', 'priority': 0.3},
+        {'loc': f'{base_url}/hrrejection', 'changefreq': 'weekly', 'priority': 0.3},
+        {'loc': f'{base_url}/seinfeld', 'changefreq': 'weekly', 'priority': 0.3},
+    ]
+    return render_template('sitemap.xml', urls=urls), 200, {'Content-Type': 'application/xml'}
+
 
 @app.before_request
 def redirect_to_www():
@@ -35,17 +46,9 @@ def redirect_to_www():
 def index():
     return render_template("index.html", current_year=datetime.now().year)
 
-@app.route("/previous")
+@app.route("/projects")
 def previous():
-    return render_template("previous.html", current_year=datetime.now().year)
-
-@app.route("/webapps")
-def webapps():
-    return render_template("webapps.html", current_year=datetime.now().year)
-
-@app.route("/contact")
-def contact():
-    return render_template("contact.html", current_year=datetime.now().year)
+    return render_template("projects.html", current_year=datetime.now().year)
 
 @app.route("/wacky")
 def wacky():
