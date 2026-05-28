@@ -21,6 +21,10 @@ from flask import send_from_directory
 def robots():
     return send_from_directory('static', 'robots.txt')
 
+@app.route('/llms.txt')
+def llms():
+    return send_from_directory('static', 'llms.txt')
+
 @app.route('/sitemap.xml')
 def sitemap():
     base_url = 'https://www.arnaldopangia.com'

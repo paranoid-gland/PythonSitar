@@ -2,32 +2,35 @@
 {% block content %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}">
-<section class="title">
-  <h1>Portfolio</h1>
-</section>
 
 <section class="dark-divider-medium">
   <h2>AI &amp; Automation Work</h2>
 </section>
+<div class="slider-track">
+  <h1>Magpie</h1>
+</div>
 <div class="bio">
-  <h3>Magpie</h3>
   <div class="video-embed">
-    <iframe src="https://www.youtube.com/embed/DvFwb21lMrQ" title="Magpie — AI content production system" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/DvFwb21lMrQ" title="Magpie Video idealo innovation week 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
-  <p>Magpie is an AI-powered content production system built in Python at idealo. It automates the full pipeline from data to publishable creative — scraping product offers, rendering on-brand assets, and generating video content at scale across multiple European markets.</p>
-
+  <p>Magpie is an <strong>AI-powered content production system</strong> built in <strong>Python</strong>, HTML, and Typescript at <a href="https://www.idealo.de/" target="_blank" rel="noopener"><strong>idealo</strong></a>. It automates the <strong>full pipeline</strong> from data to publishable creative, i.e. scraping product offers, rendering on-brand assets, and generating <strong>video content at scale</strong> across multiple European markets.</p>
   <h4>Magpie Picture</h4>
-  <p>Renders daily product offers into ready-to-post social creatives for Meta and TikTok. Live across idealo.it, idealo.fr, idealo.at, and idealo.co.uk. ~200 assets generated per month with no manual intervention.</p>
+  <p>Renders daily product offers into <strong>ready-to-post social creatives</strong> for <strong>Meta and TikTok</strong>. Live across idealo.it, idealo.fr, idealo.at, and idealo.co.uk. <strong>~200 assets generated per month</strong> with <strong>no manual intervention</strong>.</p>
 
   <h4>Magpie Video</h4>
-  <p>Generates on-brand AI video content at scale — no prompt engineering required. Adopted in idealo.de. Reached the semifinals of idealo's AI Innovation Weeks.</p>
-
-  <h3>ALIX</h3>
-  <p>AI-powered legal compliance assistant. Built to help marketing teams check creative output against compliance requirements. Won first place (impact category) at idealo's AI Innovation Weeks.</p>
-  <div class="video-embed">
-    <iframe src="https://www.youtube.com/embed/hEjxNdq0Dvk" title="ALIX — AI compliance assistant" allowfullscreen></iframe>
-  </div>
+  <p>Generates <strong>on-brand AI video content at scale</strong> — <strong>no prompt engineering required</strong>. Adopted in <a href="https://www.idealo.de/" target="_blank" rel="noopener">idealo.de</a>. Reached the semifinals of <a href="https://www.idealo.de/" target="_blank" rel="noopener">idealo</a>'s <strong>AI Innovation Weeks</strong>.</p>
 </div>
+<div class="slider-track">
+  <h1>ALIX</h1>
+</div>
+  <div class="bio">
+  
+  <div class="video-embed">
+    <iframe src="https://www.youtube.com/embed/hEjxNdq0Dvk" title="Alix Demo idealo innovation week 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <p><strong>AI-powered legal compliance assistant.</strong> Built to help <strong>marketing teams</strong> check creative output against <strong>compliance requirements</strong>. <strong>Won first place</strong> (impact category) at <a href="https://www.idealo.de/" target="_blank" rel="noopener">idealo</a>'s <strong>AI Innovation Weeks</strong>.</p>
+</div>
+  </div>
+
 
 <section class="dark-divider-medium">
   <h2>Content &amp; Audience</h2>
@@ -119,4 +122,10 @@
     </a>
 </div>
 
+<section class="dark-divider-medium">
+  <h2>GitHub</h2>
+</section>
+<div class="bio" id="github">
+  <p>Browse my code on <a href="https://github.com/adriatic-kestrel" target="_blank" rel="noopener"><strong>GitHub</strong></a>.</p>
+</div>
 {% endblock %}

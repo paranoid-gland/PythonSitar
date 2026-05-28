@@ -1,0 +1,33 @@
+# Arnaldo Pangia
+
+> Berlin-based brand manager and AI creative producer. Builds production-grade AI tools for marketing teams.
+
+## About
+
+Arnaldo Pangia is a brand manager and AI creative producer based in Berlin. He designs and ships automation pipelines and AI tools for marketing, combining creative strategy with hands-on engineering in Python, Flask, and generative AI.
+
+Previously spent ten years building a 100K+ audience (Barbaroffa) from scratch across YouTube, Instagram, and TikTok — 15M organic views, 17K course students, no paid promotion.
+
+## AI & Automation Work
+
+- [Magpie](https://www.arnaldopangia.com/projects): AI-powered content production system built at idealo. Automates the full pipeline from product data to publishable social creatives and video content at scale across five European markets.
+- [ALIX](https://www.arnaldopangia.com/projects): AI-powered legal compliance assistant for marketing teams. Won first place (impact category) at idealo's AI Innovation Weeks.
+
+## Content & Audience
+
+- [Barbaroffa](https://www.youtube.com/@barbaroffa): Cross-platform content project (2014–2025). 77K YouTube subscribers, 20K Instagram followers, 10K TikTok followers. 15M+ organic views in the Italian market.
+- [Udemy Courses](https://www.udemy.com/user/arnaldo-pangia/): Bestselling courses on AI, prompt engineering, English for Italian speakers, and YouTube strategy. 17,000+ enrollments.
+
+## Wacky Code
+
+- [Wacky Code](https://www.arnaldopangia.com/wacky): A collection of high-effort, low-impact Flask apps built for fun — phrasal verb generator, HR rejection generator, Bürgeramt simulator, Seinfeld opening generator.
+
+## Links
+
+- Homepage: https://www.arnaldopangia.com
+- Portfolio: https://www.arnaldopangia.com/projects
+- GitHub: https://github.com/adriatic-kestrel
+- LinkedIn: https://www.linkedin.com/in/arnaldopangia/
+- YouTube: https://www.youtube.com/@arnaldopangia
+- Substack: https://arnaldopangia.substack.com
+- Email: info@arnaldopangia.com
