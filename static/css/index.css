@@ -53,13 +53,13 @@
 }
 
 .hero-tagline {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: right;
-  line-height: 1.4;
+  line-height: 1.6;
   color: var(--color-primary-dark);
-  font-weight: 100;
-  letter-spacing: 10px;
-  word-spacing: 10px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  word-spacing: 2px;
 }
 
   .contacts{
@@ -70,6 +70,22 @@
     padding: 2rem;
 
   }
+
+.social-icons {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.social-icons a {
+  color: var(--color-primary-dark);
+  transition: color 0.2s ease;
+}
+
+.social-icons a:hover {
+  color: var(--color-primary-accent);
+}
 
 @media (max-width: 1200px) {
 
@@ -120,13 +136,13 @@
 }
 
 .hero-tagline {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: right;
-  line-height: 1.4;
+  line-height: 1.6;
   color: var(--color-primary-dark);
-  font-weight: 100;
-  letter-spacing: 7px;
-  word-spacing: 7px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
 }
 
   .contacts{
