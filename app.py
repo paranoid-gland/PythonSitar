@@ -25,6 +25,10 @@ def robots():
 def llms():
     return send_from_directory('static', 'llms.txt')
 
+@app.route('/google20d3949ac7d286d0.html')
+def google_verification():
+    return send_from_directory('static', 'google20d3949ac7d286d0.html')
+
 @app.route('/sitemap.xml')
 def sitemap():
     base_url = 'https://www.arnaldopangia.com'
